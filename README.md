@@ -57,7 +57,7 @@ Since Bert is a model that requires a lot of computer computing power, I took on
 <p align="center">
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200420231335/elmo-eemmbeddings.jpg" width=50% height=50% >
 </p>
-Image from [here](https://www.geeksforgeeks.org/explanation-of-bert-model-nlp/)
+Image from [here](https://www.geeksforgeeks.org/explanation-of-bert-model-nlp)
 
 # Bert Preprocess
 
