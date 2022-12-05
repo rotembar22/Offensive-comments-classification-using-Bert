@@ -36,9 +36,17 @@ To label the comments, I defined an offensive comment when at least 50% of the r
 **Data distribution - Imbalanced data:**
 
 13,590 comments are offensive
-102,274 comments are not 
+<br>102,274 comments are not 
 
 This is highly imbalanced data. We need to e careful when choosing the right evaluation metric. Accuracy will be a bad metric. For example, a model that classifies all the instances as not offensive will get an accuracy of 88.27%. To evaluate our model, we will use AUC.
 
 # Chunking Approach
 
+The Bert model has an input limitation of the size of 512 tokens. Some of our comments exceed this limitation, and we need to address this issue. There are several approaches:
+
+Taking the first 512 tokens
+taking the last 512 tokens
+Taking the first and the last of the tokens in the document. For example, taking the first 256 tokens and contacting them to the last 256 tokens.
+
+I chose the first approach by taking the first X tokens.
+Since Bert is a model that requires a lot of computer computing power, I took only the first 128 tokens. It will make the training much easier to train in terms of computing power.
