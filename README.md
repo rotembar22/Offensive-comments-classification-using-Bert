@@ -87,7 +87,7 @@ Here are a few examples:
 * word2vec/GLOVE (avg) + classifier (SVM/RF/LR)
 
 
-Addinutly, AUC indicates the model performance over all the thresholds between Precision and Recall. For further analysis, we need to define what is more essential.
-<br>Precision quantifies the number of offensive comments that are actually offensive. Or Recall that quantifies the number of offensive comments predictions made out of all comments. 
+Addinutly, AUC indicates the model performance over all the thresholds between Precision and Recall. For further analysis, we want to define what is more essential in our real word problem.
+<br>Precision thath quantifies the number of offensive comments that are actually offensive. Or Recall that quantifies the number of offensive comments predictions made out of all comments. 
 <br>So, suppose we want to minimize the offensive comments as possible, also at the cost of classifying good comments. In that case, we will wish to get High Recall. On the other hand, in case reviewing offensive comments costs us significant money\time, and we don't care if there are offensive comments once in a while. We will want high Precision.
 
