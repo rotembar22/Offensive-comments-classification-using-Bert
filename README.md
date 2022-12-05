@@ -12,5 +12,21 @@
 
 # Overview
 
-# Code implementation References
+# Dataset Description
+
+The data can be found here:
+attack_annotated_comments.tsv: https://ndownloader.figshare.com/files/7554634
+attack_annotations.tsv:        https://ndownloader.figshare.com/files/7554637
+
+
+<p align="center">
+<img src="img/Screenshot 2022-12-01 084800.jpeg" width=50% height=50% >
+</p>
+
+
+
+
+<p align="center">
+<img src="img/Screenshot 2022-12-01 084800.jpeg" width=50% height=50% >
+</p>
 
