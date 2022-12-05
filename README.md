@@ -50,3 +50,12 @@ Taking the first and the last of the tokens in the document. For example, taking
 
 I chose the first approach by taking the first X tokens.
 Since Bert is a model that requires a lot of computer computing power, I took only the first 128 tokens. It will make the training much easier to train in terms of computing power.
+
+# Bert Preprocess
+
+Here are the preprocessing steps performed on the commets to prepare them for Bert model training:
+* Pad comments that are in the size of less than 128 with '0' values.
+* Create an attention mask indicate for the padded comments
+* Add '[CLS]' to the beginning of a sentence and '[SEP]' at the end.
+* Convert from NumPy to PyTorch tensors.
+
