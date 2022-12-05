@@ -5,7 +5,7 @@
 
   - [Overview](#overview)
   - [Dataset Description](#dataset-description)
-  - [Chunking approach](#chunking-approach)
+  - [Chunking Approach](#chunking-approach)
   - [Bert Preprocess](#bert-preprocess)
   - [Bert Fine Tuning](#bert-fine-tuning)
   - [Model Results and Discussion](#model-results-and-discussion)  
@@ -28,4 +28,17 @@ Annotations
 <p align="center">
 <img src="images/Screenshot 2022-12-05 125334.jpeg" width=50% height=50% >
 </p>
+
+Each comment can be reported as one of the following attacks: quoting_attack, recipient_attack, third_party_attack, and other_attack.
+If one of them is positive (=1), the attack feature will also be positive. Therefore we will use only the attack feature. 
+To label the comments, I defined an offensive comment when at least 50% of the reports were positive.
+
+**Data distribution - Imbalanced data:**
+
+13,590 comments are offensive
+102,274 comments are not 
+
+This is highly imbalanced data. We need to e careful when choosing the right evaluation metric. Accuracy will be a bad metric. For example, a model that classifies all the instances as not offensive will get an accuracy of 88.27%. To evaluate our model, we will use AUC.
+
+# Chunking Approach
 
