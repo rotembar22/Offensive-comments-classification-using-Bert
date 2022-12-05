@@ -45,8 +45,8 @@ To label the comments, I defined an offensive comment when at least 50% of the r
 
 **Data distribution - Imbalanced data:**
 
-13,590 comments are offensive
-<br>102,274 comments are not 
+13,590 Comments that are offensive
+<br>102,274 Comments that are not offensive
 
 This is highly imbalanced data. We need to e careful when choosing the right evaluation metric. Accuracy will be a bad metric. For example, a model that classifies all the instances as not offensive will get an accuracy of 88.27%. To evaluate our model, we will use AUC.
 
