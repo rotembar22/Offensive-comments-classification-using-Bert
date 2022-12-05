@@ -59,3 +59,15 @@ Here are the preprocessing steps performed on the commets to prepare them for Be
 * Add '[CLS]' to the beginning of a sentence and '[SEP]' at the end.
 * Convert from NumPy to PyTorch tensors.
 
+
+# Bert Fine Tuning
+
+Bert is a word embedding model. So how will we use it in our classification problem?
+
+The methodology will be as follow:
+1. Encode the documents tokens-> we will get 128 vectors of the size 768
+2. Perform document embedding by averaging the vectors from step 1. 
+3. Feed the vector to a classification model
+
+<br>In this project, I decided to use BertForSequenceClassification.
+BertForSequenceClassification is a BERT model with an added single linear layer on top for classification that we will use as a sentence classifier. The entire pre-trained BERT model and the additional untrained classification layer are trained on our specific task as we feed input data.
