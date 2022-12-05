@@ -15,10 +15,6 @@
 
 Text classification is a prevalent task. It is widely used in many different applications and domains. In this project, I used the well-known Bert model to classify offensive comments on Wikipedia. Some of the challenges I faced in this project were understanding how to build the preprocessing pipeline for the Bert model and overcoming the input size limitation.
 
-<p align="center">
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200420231335/elmo-eemmbeddings.jpg" width=50% height=50% >
-</p>
-
 # Dataset Description
 
 The data can be found here:
@@ -57,6 +53,12 @@ Taking the first and the last of the tokens in the document. For example, taking
 In this project I used the first approach by taking the first X tokens.
 Since Bert is a model that requires a lot of computer computing power, I took only the first 128 tokens. It will make the training much easier to train in terms of computing power.
 
+
+<p align="center">
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200420231335/elmo-eemmbeddings.jpg" width=50% height=50% >
+</p>
+Image from [here](https://www.geeksforgeeks.org/explanation-of-bert-model-nlp/)
+
 # Bert Preprocess
 
 Here are the preprocessing steps performed on the commets to prepare them for Bert model training:
@@ -94,4 +96,10 @@ Here are a few examples:
 Addinutly, AUC indicates the model performance over all the thresholds between Precision and Recall. For further analysis, we want to define what is more essential in our real word problem.
 <br>Precision thath quantifies the number of offensive comments that are actually offensive. Or Recall that quantifies the number of offensive comments predictions made out of all comments. 
 <br>So, suppose we want to minimize the offensive comments as possible, also at the cost of classifying good comments. In that case, we will wish to get High Recall. On the other hand, in case reviewing offensive comments costs us significant money\time, and we don't care if there are offensive comments once in a while. We will want high Precision.
+
+
+
+Here some of referances that I used in this project:
+
+[Link_1](https://github.com/huggingface/transformers/blob/5bfcd0485ece086ebcbed2d008813037968a9e58/examples/run_glue.py)
 
