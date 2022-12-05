@@ -1,5 +1,8 @@
 # Offensive-comments-classification-using-Bert
 
+<p align="center">
+<img src="https://cdn.arstechnica.net/wp-content/uploads/2014/01/2000px-Wikipedia-logo-v2-en1-640x538.png" width=100% height=100% >
+</p>
 
 ## Quick Links
 
