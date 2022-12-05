@@ -20,13 +20,13 @@ Text classification is a prevalent task. It is widely used in many different app
 The data can be found here:
 [Link to the dataset in Kaggle](https://www.kaggle.com/datasets/jigsaw-team/wikipedia-talk-labels-personal-attacks)
 
-Comments:
+**Comments:**
 <p align="center">
 <img src="images/Screenshot 2022-12-05 125317.jpeg" width=50% height=50% >
 </p>
 We will use only the "comment" and the split features; comments contain the text we will process, and the split feature helps us split the data to train and test sets. Although we don't must split with the same portion, we can split by ourselves.
 
-Annotations
+**Annotations:**
 <p align="center">
 <img src="images/Screenshot 2022-12-05 125334.jpeg" width=50% height=50% >
 </p>
@@ -102,4 +102,9 @@ Addinutly, AUC indicates the model performance over all the thresholds between P
 Here some of referances that I used in this project:
 
 [Link_1](https://github.com/huggingface/transformers/blob/5bfcd0485ece086ebcbed2d008813037968a9e58/examples/run_glue.py)
+[Link_2](https://github.com/kaushaltrivedi/bert-toxic-comments-multilabel)
+[Link_3](https://github.com/ThilinaRajapakse/BERT_binary_text_classification)
+
+
+
 
