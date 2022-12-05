@@ -10,13 +10,15 @@
   - [Bert Fine Tuning](#bert-fine-tuning)
   - [Model Results and Discussion](#model-results-and-discussion)  
 
+
 # Overview
+
+
 
 # Dataset Description
 
 The data can be found here:
-attack_annotated_comments.tsv: https://ndownloader.figshare.com/files/7554634
-attack_annotations.tsv:        https://ndownloader.figshare.com/files/7554637
+[Link to the dataset in Kaggle](https://www.kaggle.com/datasets/jigsaw-team/wikipedia-talk-labels-personal-attacks)
 
 Comments:
 <p align="center">
@@ -48,7 +50,7 @@ Taking the first 512 tokens
 taking the last 512 tokens
 Taking the first and the last of the tokens in the document. For example, taking the first 256 tokens and contacting them to the last 256 tokens.
 
-I chose the first approach by taking the first X tokens.
+In this project I used the first approach by taking the first X tokens.
 Since Bert is a model that requires a lot of computer computing power, I took only the first 128 tokens. It will make the training much easier to train in terms of computing power.
 
 # Bert Preprocess
@@ -86,6 +88,6 @@ Here are a few examples:
 
 
 Addinutly, AUC indicates the model performance over all the thresholds between Precision and Recall. For further analysis, we need to define what is more essential.
-Precision quantifies the number of offensive comments that are actually offensive. Or Recall that quantifies the number of offensive comments predictions made out of all comments. 
-So, suppose we want to minimize the offensive comments as possible, also at the cost of classifying good comments. In that case, we will wish to get High Recall. On the other hand, in case reviewing offensive comments costs us significant money\time, and we don't care if there are offensive comments once in a while. We will want high Precision.
+<br>Precision quantifies the number of offensive comments that are actually offensive. Or Recall that quantifies the number of offensive comments predictions made out of all comments. 
+<br>So, suppose we want to minimize the offensive comments as possible, also at the cost of classifying good comments. In that case, we will wish to get High Recall. On the other hand, in case reviewing offensive comments costs us significant money\time, and we don't care if there are offensive comments once in a while. We will want high Precision.
 
