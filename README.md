@@ -109,9 +109,9 @@ Addinutly, AUC indicates the model performance over all the thresholds between P
 
 Here some of referances that I used in this project:
 
-[Link_1](https://github.com/huggingface/transformers/blob/5bfcd0485ece086ebcbed2d008813037968a9e58/examples/run_glue.py)
-[Link_2](https://github.com/kaushaltrivedi/bert-toxic-comments-multilabel)
-[Link_3](https://github.com/ThilinaRajapakse/BERT_binary_text_classification)
+<br>[Link_1](https://github.com/huggingface/transformers/blob/5bfcd0485ece086ebcbed2d008813037968a9e58/examples/run_glue.py)
+<br>[Link_2](https://github.com/kaushaltrivedi/bert-toxic-comments-multilabel)
+<br>[Link_3](https://github.com/ThilinaRajapakse/BERT_binary_text_classification)
 
 
 
