@@ -25,7 +25,7 @@ The data can be found here:
 <img src="images/Screenshot 2022-12-05 125317.jpeg" width=50% height=50% >
 </p>
 We will use only the "comment" and the split features; comments contain the text we will process, and the split feature helps us split the data to train and test sets. Although we don't must split with the same portion, we can split by ourselves.
-
+<br>
 **Annotations:**
 <p align="center">
 <img src="images/Screenshot 2022-12-05 125334.jpeg" width=50% height=50% >
