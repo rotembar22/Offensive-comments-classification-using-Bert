@@ -71,3 +71,21 @@ The methodology will be as follow:
 
 <br>In this project, I decided to use BertForSequenceClassification.
 BertForSequenceClassification is a BERT model with an added single linear layer on top for classification that we will use as a sentence classifier. The entire pre-trained BERT model and the additional untrained classification layer are trained on our specific task as we feed input data.
+
+
+# Model Results and Discussion
+
+AUC results:  0.964
+
+
+<br>We received a high AUC, but to truly evaluate the methodology performance, we need to compare the results with other algorithms. The main flow of the text classification task contains three components: word embedding, sentence embedding, and classification.
+Here are a few examples:
+
+* TF-IDF +Logistic Regression -> popular simple solution that is widely used. Note that TF-IDF is not an embedding model. It is a vectorization algorithm.
+* word2vec/GLOVE (avg) + classifier (SVM/RF/LR)
+
+
+Addinutly, AUC indicates the model performance over all the thresholds between Precision and Recall. For further analysis, we need to define what is more essential.
+Precision quantifies the number of offensive comments that are actually offensive. Or Recall that quantifies the number of offensive comments predictions made out of all comments. 
+So, suppose we want to minimize the offensive comments as possible, also at the cost of classifying good comments. In that case, we will wish to get High Recall. On the other hand, in case reviewing offensive comments costs us significant money\time, and we don't care if there are offensive comments once in a while. We will want high Precision.
+
