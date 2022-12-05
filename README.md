@@ -13,7 +13,11 @@
 
 # Overview
 
+Text classification is a prevalent task. It is widely used in many different applications and domains. In this project, I used the well-known Bert model to classify offensive comments on Wikipedia. Some of the challenges I faced in this project were understanding how to build the preprocessing pipeline for the Bert model and overcoming the input size limitation.
 
+<p align="center">
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200420231335/elmo-eemmbeddings.jpg" width=50% height=50% >
+</p>
 
 # Dataset Description
 
